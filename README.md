@@ -8,7 +8,7 @@
 - Vue-axios
 
 ### News API key
-Get a new api key from [here](https://newsapi.org/) and paste in (store/index.js).
+Get a new api key from [here](https://newsapi.org/) and paste in [store/index.js](https://github.com/salmankhalid187/vue-headlines/blob/master/src/store/index.js#L9).
 
 ## Project setup
 ```
