@@ -8,7 +8,7 @@
 - Vue-axios
 
 ### News API key
-Get a new api key from (here)[https://newsapi.org/] and paste in (store/index.js).
+Get a new api key from [here](https://newsapi.org/) and paste in (store/index.js).
 
 ## Project setup
 ```
