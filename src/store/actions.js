@@ -4,6 +4,8 @@ import Vue from 'vue'
 
 Vue.use(VueAxios, axios)
 
+const NEWS_API_KEY = "News API Key Goes Here!";
+
 export default {
   async loadArticles({ commit }) {
     await axios
