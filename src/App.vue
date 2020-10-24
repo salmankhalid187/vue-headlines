@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <router-link to="/">Headlines</router-link>
+    <router-link class="link" to="/cricket">Cricket</router-link>
     <router-view></router-view>
   </div>
 </template>
@@ -20,5 +21,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.link {
+  margin: 50px;
 }
 </style>

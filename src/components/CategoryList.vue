@@ -1,9 +1,11 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <div class="my-items">
-    <div v-for="(article, i) in articles" :key="i">
+    <h1>{{ category }}</h1>
+    <div class="articles">
+    <div v-for="(article, i) in cricketArticles" :key="i">
+      <div class="article">
        {{article.title}}
+      </div> 
        <hr>
     </div>
  </div>
@@ -14,15 +16,15 @@
 import { mapState } from 'vuex';
 
 export default {
-  name: 'HeadlinesList',
+  name: 'CategoryList',
   props: {
-    msg: String
+    category: String
   },
   mounted () {
-    this.$store.dispatch('loadHeadlines')
+    this.$store.dispatch('loadCategory')
   },
   computed: mapState([
-      'articles'
+      'cricketArticles'
   ])
 }
 </script>
@@ -42,5 +44,8 @@ li {
 }
 a {
   color: #42b983;
+}
+.article {
+  color: blue;
 }
 </style>

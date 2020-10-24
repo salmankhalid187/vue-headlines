@@ -14,5 +14,15 @@ export default {
       .then(articles => {
         commit('SET_Articles', articles)
     })
+  },
+
+  async loadCategory({ commit }) {
+    await axios
+      .get('https://newsapi.org/v2/everything?q=cricket&apikey=' + NEWS_API_KEY)
+      .then(response => response.data.articles)
+      .then(articles => {
+        commit('SET_Articles_Cricket', articles)
+    })
   }
+  
 };
