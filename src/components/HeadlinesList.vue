@@ -14,12 +14,12 @@
 import { mapState } from 'vuex';
 
 export default {
-  name: 'ArticlesList',
+  name: 'HeadlinesList',
   props: {
     msg: String
   },
   mounted () {
-    this.$store.dispatch('loadArticles')
+    this.$store.dispatch('loadHeadlines')
   },
   computed: mapState([
       'articles'
