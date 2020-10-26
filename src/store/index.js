@@ -26,7 +26,5 @@ export default new Vuex.Store({
       state.cricketArticles = articles
     },
   },
-  actions,
-  modules: {
-  }
+  actions
 })
